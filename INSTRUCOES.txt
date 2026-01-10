@@ -1,0 +1,102 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                    COLÉGIO ILHA BRASIL - WEBSITE                      ║
+║                   Desenvolvido por: Henrique Siqueira                 ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+📋 INSTRUÇÕES RÁPIDAS DE USO
+
+1. TROCAR IMAGENS DO SLIDER
+   ─────────────────────────
+   • Vá para: assets/images/slides/
+   • Substitua os arquivos:
+     - slide1.jpg (1920x1080px)
+     - slide2.jpg (1920x1080px)
+     - slide3.jpg (1920x1080px)
+   • Mantenha os mesmos nomes!
+
+2. ADICIONAR FOTOS NA GALERIA
+   ───────────────────────────
+   • Vá para: assets/images/galeria/
+   • Adicione suas fotos como:
+     - img1.jpg, img2.jpg, img3.jpg... (800x600px recomendado)
+   • Edite o index.html para adicionar mais itens de galeria
+
+3. TROCAR IMAGENS DE NOTÍCIAS
+   ────────────────────────────
+   • Vá para: assets/images/noticias/
+   • Substitua: noticia1.jpg, noticia2.jpg, noticia3.jpg
+   • Tamanho recomendado: 800x500px
+
+4. CONFIGURAR FIREBASE
+   ────────────────────
+   • Leia o arquivo: README.md (seção Firebase)
+   • Edite: js/firebase-config.js
+   • Adicione suas credenciais do Firebase
+
+5. FAZER DEPLOY NA VERCEL
+   ───────────────────────
+   • Acesse: https://vercel.com
+   • Faça login
+   • Arraste a pasta do projeto ou conecte o Git
+   • Clique em "Deploy"
+   • Pronto! Seu site está no ar
+
+6. CONECTAR DOMÍNIO
+   ─────────────────
+   • Na Vercel, vá em Settings > Domains
+   • Adicione seu domínio
+   • Configure o DNS conforme instruído
+   • Aguarde propagação (até 48h)
+
+7. EDITAR CONTEÚDO
+   ───────────────
+   • Textos: Edite index.html
+   • Cores: Edite css/style.css (variáveis CSS)
+   • Funcionalidades: Edite arquivos em js/
+
+8. INFORMAÇÕES DE CONTATO
+   ───────────────────────
+   Para alterar telefone, e-mail, endereço:
+   • Abra index.html
+   • Procure por <footer>
+   • Altere as informações
+
+⚠️  IMPORTANTE:
+   • Sempre faça backup antes de editar
+   • Teste localmente antes de fazer deploy
+   • Use imagens otimizadas (comprimidas)
+   • Mantenha os nomes dos arquivos originais
+
+📚 DOCUMENTAÇÃO COMPLETA:
+   Leia o arquivo README.md para instruções detalhadas
+
+🆘 PRECISA DE AJUDA?
+   Entre em contato com Henrique Siqueira
+
+═══════════════════════════════════════════════════════════════════════
+
+🎨 ESTRUTURA DE CORES (Bandeira do Brasil):
+   • Verde Principal: #009739
+   • Amarelo: #FEDD00
+   • Azul: #002776
+   • Branco: #FFFFFF
+
+═══════════════════════════════════════════════════════════════════════
+
+✅ CHECKLIST ANTES DO DEPLOY:
+
+□ Adicionar suas próprias imagens
+□ Configurar credenciais do Firebase
+□ Testar formulário de login
+□ Verificar links de redes sociais
+□ Atualizar informações de contato
+□ Testar em diferentes navegadores
+□ Testar em celular e tablet
+□ Otimizar imagens (comprimir)
+□ Revisar todos os textos
+□ Configurar Google Analytics (opcional)
+
+═══════════════════════════════════════════════════════════════════════
+
+Desenvolvido com ❤️ por Henrique Siqueira
+© 2026 Colégio Ilha Brasil - Todos os direitos reservados

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Colégio Ilha Brasil - Educação de qualidade com excelência">
+    <meta name="keywords" content="colégio, educação, escola, ensino">
+    <meta name="author" content="Henrique Siqueira">
+    <title>Colégio Ilha Brasil - Educação de Excelência</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Colégio Ilha Brasil">
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Institucional <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#sobre">Sobre o Colégio</a></li>
+                            <li><a href="#missao">Missão e Valores</a></li>
+                            <li><a href="#equipe">Nossa Equipe</a></li>
+                            <li><a href="#infraestrutura">Infraestrutura</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Ensino <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#infantil">Educação Infantil</a></li>
+                            <li><a href="#fundamental1">Ensino Fundamental I</a></li>
+                            <li><a href="#fundamental2">Ensino Fundamental II</a></li>
+                            <li><a href="#medio">Ensino Médio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <li><a href="#noticias" class="nav-link">Notícias</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                    <li><a href="login.html" class="btn-login"><i class="fas fa-user"></i> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="home">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="assets/images/slides/slide1.jpg" alt="Slide 1">
+                <div class="slide-content">
+                    <h1>Bem-vindo ao Colégio Ilha Brasil</h1>
+                    <p>Educação de qualidade que transforma vidas</p>
+                    <a href="#sobre" class="btn-primary">Conheça Mais</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/images/slides/slide2.jpg" alt="Slide 2">
+                <div class="slide-content">
+                    <h1>Excelência em Ensino</h1>
+                    <p>Preparando cidadãos para o futuro</p>
+                    <a href="#matriculas" class="btn-primary">Matricule-se</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/images/slides/slide3.jpg" alt="Slide 3">
+                <div class="slide-content">
+                    <h1>Infraestrutura Completa</h1>
+                    <p>Ambiente moderno e acolhedor para aprender</p>
+                    <a href="#galeria" class="btn-primary">Ver Galeria</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <button class="slider-btn prev" id="prevBtn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next" id="nextBtn">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- Slider Indicators -->
+        <div class="slider-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Sobre o Colégio -->
+    <section class="sobre-section" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Institucional</span>
+                <h2>Sobre o Colégio Ilha Brasil</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="sobre-content">
+                <div class="sobre-image">
+                    <img src="assets/images/sobre-escola.jpg" alt="Colégio Ilha Brasil">
+                    <div class="sobre-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Educação de Excelência</span>
+                    </div>
+                </div>
+                
+                <div class="sobre-text">
+                    <h3>Uma História de Dedicação à Educação</h3>
+                    <p>O Colégio Ilha Brasil é uma instituição comprometida com a excelência educacional, oferecendo ensino de qualidade da Educação Infantil ao Ensino Médio. Nossa missão é formar cidadãos éticos, críticos e preparados para os desafios do século XXI.</p>
+                    
+                    <p>Com uma equipe pedagógica altamente qualificada e infraestrutura moderna, proporcionamos um ambiente acolhedor e estimulante, onde cada aluno é valorizado e incentivado a desenvolver todo seu potencial.</p>
+                    
+                    <div class="sobre-features">
+                        <div class="feature-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Ensino de Qualidade</h4>
+                                <p>Metodologia moderna e eficaz</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Equipe Especializada</h4>
+                                <p>Professores capacitados e dedicados</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <h4>Infraestrutura Moderna</h4>
+                                <p>Ambientes preparados para aprendizagem</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Ambiente Acolhedor</h4>
+                                <p>Cuidado e atenção individual</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="diferenciais-section">
+        <div class="container">
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Metodologia Inovadora</h3>
+                    <p>Práticas pedagógicas atualizadas que estimulam o aprendizado ativo</p>
+                </div>
+                
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Tecnologia Educacional</h3>
+                    <p>Recursos digitais integrados ao processo de ensino</p>
+                </div>
+                
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Atividades Extracurriculares</h3>
+                    <p>Esportes, artes e cultura para desenvolvimento integral</p>
+                </div>
+                
+                <div class="diferencial-card">
+                    <div class="diferencial-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança Total</h3>
+                    <p>Ambiente seguro e monitorado para tranquilidade das famílias</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section class="galeria-section" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Conheça Nosso Espaço</span>
+                <h2>Galeria de Fotos</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="galeria-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="infraestrutura">Infraestrutura</button>
+                <button class="filter-btn" data-filter="eventos">Eventos</button>
+                <button class="filter-btn" data-filter="aulas">Aulas</button>
+                <button class="filter-btn" data-filter="esportes">Esportes</button>
+            </div>
+            
+            <div class="galeria-grid">
+                <div class="galeria-item" data-category="infraestrutura">
+                    <img src="assets/images/galeria/img1.jpg" alt="Galeria 1">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Sala de Aula Moderna</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-category="eventos">
+                    <img src="assets/images/galeria/img2.jpg" alt="Galeria 2">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Festa Junina 2024</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-category="aulas">
+                    <img src="assets/images/galeria/img3.jpg" alt="Galeria 3">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Laboratório de Ciências</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-category="esportes">
+                    <img src="assets/images/galeria/img4.jpg" alt="Galeria 4">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Quadra Poliesportiva</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-category="infraestrutura">
+                    <img src="assets/images/galeria/img5.jpg" alt="Galeria 5">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Biblioteca</p>
+                    </div>
+                </div>
+                
+                <div class="galeria-item" data-category="eventos">
+                    <img src="assets/images/galeria/img6.jpg" alt="Galeria 6">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Formatura 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notícias -->
+    <section class="noticias-section" id="noticias">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Fique por Dentro</span>
+                <h2>Notícias e Eventos</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="noticias-grid">
+                <article class="noticia-card">
+                    <div class="noticia-image">
+                        <img src="assets/images/noticias/noticia1.jpg" alt="Notícia 1">
+                        <span class="noticia-tag">Educação</span>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-meta">
+                            <span><i class="far fa-calendar"></i> 10 Jan 2026</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <h3>Início do Ano Letivo 2026</h3>
+                        <p>Estamos prontos para receber nossos alunos com muita energia e novidades para este novo ano letivo cheio de aprendizado e descobertas.</p>
+                        <a href="#" class="noticia-link">Ler mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="noticia-card">
+                    <div class="noticia-image">
+                        <img src="assets/images/noticias/noticia2.jpg" alt="Notícia 2">
+                        <span class="noticia-tag">Eventos</span>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-meta">
+                            <span><i class="far fa-calendar"></i> 05 Jan 2026</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <h3>Matrículas Abertas para 2026</h3>
+                        <p>Venha fazer parte da família Ilha Brasil! Matrículas abertas para todos os níveis de ensino. Agende uma visita e conheça nossa estrutura.</p>
+                        <a href="#" class="noticia-link">Ler mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="noticia-card">
+                    <div class="noticia-image">
+                        <img src="assets/images/noticias/noticia3.jpg" alt="Notícia 3">
+                        <span class="noticia-tag">Conquistas</span>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-meta">
+                            <span><i class="far fa-calendar"></i> 20 Dez 2025</span>
+                            <span><i class="far fa-user"></i> Admin</span>
+                        </div>
+                        <h3>Alunos Aprovados em Universidades</h3>
+                        <p>Orgulho dos nossos estudantes! Mais de 90% dos formandos foram aprovados em universidades públicas e privadas de renome.</p>
+                        <a href="#" class="noticia-link">Ler mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="noticias-btn-container">
+                <a href="#" class="btn-secondary">Ver Todas as Notícias</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Venha Conhecer o Colégio Ilha Brasil</h2>
+                <p>Agende uma visita e descubra como podemos contribuir para o futuro do seu filho</p>
+                <div class="cta-buttons">
+                    <a href="#contato" class="btn-primary">Agendar Visita</a>
+                    <a href="tel:+5511999999999" class="btn-outline">
+                        <i class="fas fa-phone"></i> (11) 99999-9999
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="assets/images/logo.png" alt="Colégio Ilha Brasil" class="footer-logo">
+                    <p>Educação de qualidade que transforma vidas e prepara cidadãos para o futuro.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="login.html">Portal do Aluno</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 99999-9999</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@colegioilhabrasil.com.br</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Seg - Sex: 7h às 18h</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Localização</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rua Exemplo, 1000<br>Centro, São Paulo - SP<br>CEP: 01000-000</span>
+                        </li>
+                    </ul>
+                    <div class="map-link">
+                        <a href="https://maps.google.com" target="_blank" class="btn-map">
+                            <i class="fas fa-map"></i> Ver no Mapa
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Colégio Ilha Brasil. Todos os direitos reservados.</p>
+                <p class="developer-credit">Desenvolvido com <i class="fas fa-heart"></i> por <strong>Henrique Siqueira</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
