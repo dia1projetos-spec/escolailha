@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Aluno - Colégio Ilha Brasil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="images/logo.png" alt="Colégio Ilha Brasil" class="sidebar-logo">
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#dashboard" class="nav-item active" data-section="dashboard">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#disciplinas" class="nav-item" data-section="disciplinas">
+                <i class="fas fa-book"></i>
+                <span>Disciplinas</span>
+            </a>
+            <a href="#atividades" class="nav-item" data-section="atividades">
+                <i class="fas fa-tasks"></i>
+                <span>Atividades</span>
+            </a>
+            <a href="#notas" class="nav-item" data-section="notas">
+                <i class="fas fa-chart-line"></i>
+                <span>Notas</span>
+            </a>
+            <a href="#materiais" class="nav-item" data-section="materiais">
+                <i class="fas fa-folder-open"></i>
+                <span>Materiais</span>
+            </a>
+            <a href="#calendario" class="nav-item" data-section="calendario">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Calendário</span>
+            </a>
+            <a href="#perfil" class="nav-item" data-section="perfil">
+                <i class="fas fa-user"></i>
+                <span>Meu Perfil</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <button class="btn-logout" id="btnLogout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Sair</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="page-title">Meu Painel</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="user-details">
+                        <span class="user-name" id="userName">Carregando...</span>
+                        <span class="user-role">Aluno</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Dashboard Section -->
+            <section id="dashboard-section" class="content-section active">
+                <div class="welcome-card">
+                    <h2>Olá, Aluno!</h2>
+                    <p>Acompanhe seu desempenho acadêmico</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon blue">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="stat-details">
+                            <span class="stat-value" id="totalDisciplinas">-</span>
+                            <span class="stat-label">Disciplinas</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon yellow">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="stat-details">
+                            <span class="stat-value" id="atividadesPendentes">-</span>
+                            <span class="stat-label">Atividades Pendentes</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon green">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-details">
+                            <span class="stat-value" id="atividadesConcluidas">-</span>
+                            <span class="stat-label">Atividades Concluídas</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon purple">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-details">
+                            <span class="stat-value" id="mediaGeral">-</span>
+                            <span class="stat-label">Média Geral</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-cards">
+                    <div class="info-card">
+                        <h3><i class="fas fa-clipboard-list"></i> Próximas Atividades</h3>
+                        <div class="activities-list" id="upcomingActivities">
+                            <p class="loading-text">Carregando atividades...</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-calendar-check"></i> Agenda da Semana</h3>
+                        <div class="week-schedule" id="weekSchedule">
+                            <p class="loading-text">Carregando agenda...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3><i class="fas fa-bell"></i> Avisos e Comunicados</h3>
+                    <div class="notices-list" id="notices">
+                        <p class="loading-text">Carregando avisos...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Disciplinas Section -->
+            <section id="disciplinas-section" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-book"></i> Minhas Disciplinas</h2>
+                </div>
+                <div class="disciplines-grid">
+                    <p class="info-text">Funcionalidade em desenvolvimento...</p>
+                </div>
+            </section>
+
+            <!-- Atividades Section -->
+            <section id="atividades-section" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-tasks"></i> Minhas Atividades</h2>
+                </div>
+                <div class="table-container">
+                    <p class="info-text">Funcionalidade em desenvolvimento...</p>
+                </div>
+            </section>
+
+            <!-- Notas Section -->
+            <section id="notas-section" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-chart-line"></i> Boletim de Notas</h2>
+                </div>
+                <div class="grades-container">
+                    <p class="info-text">Funcionalidade em desenvolvimento...</p>
+                </div>
+            </section>
+
+            <!-- Materiais Section -->
+            <section id="materiais-section" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-folder-open"></i> Materiais de Estudo</h2>
+                </div>
+                <div class="materials-grid">
+                    <p class="info-text">Funcionalidade em desenvolvimento...</p>
+                </div>
+            </section>
+
+            <!-- Calendário Section -->
+            <section id="calendario-section" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-calendar-alt"></i> Calendário Escolar</h2>
+                </div>
+                <div class="calendar-container">
+                    <p class="info-text">Funcionalidade em desenvolvimento...</p>
+                </div>
+            </section>
+
+            <!-- Perfil Section -->
+            <section id="perfil-section" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-user"></i> Meu Perfil</h2>
+                </div>
+                <div class="profile-container">
+                    <p class="info-text">Funcionalidade em desenvolvimento...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    
+    <!-- Scripts -->
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard-aluno.js"></script>
+</body>
+</html>

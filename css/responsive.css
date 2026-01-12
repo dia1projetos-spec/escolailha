@@ -1,0 +1,512 @@
+/* ========================================
+   Responsive Styles
+   Desenvolvido por: Henrique Siqueira
+   ======================================== */
+
+/* === TABLET (max-width: 1024px) === */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    /* Navbar */
+    .nav-menu {
+        gap: 20px;
+    }
+
+    /* Hero Slider */
+    .slide-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .slide-content p {
+        font-size: 1.1rem;
+    }
+
+    /* Sobre */
+    .sobre-content {
+        gap: 40px;
+    }
+
+    .sobre-features {
+        grid-template-columns: 1fr;
+    }
+
+    /* Diferenciais */
+    .diferenciais-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Galeria */
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Notícias */
+    .noticias-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    /* Login */
+    .login-box {
+        padding: 50px 40px;
+    }
+}
+
+/* === MOBILE (max-width: 768px) === */
+@media (max-width: 768px) {
+    /* Navbar Mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        flex-direction: column;
+        background: var(--branco);
+        width: 100%;
+        padding: 30px;
+        box-shadow: var(--sombra-media);
+        transition: 0.3s;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid var(--cinza-medio);
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .dropdown.active .dropdown-menu {
+        max-height: 500px;
+        margin-top: 10px;
+    }
+
+    .btn-login {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Hero Slider */
+    .hero-slider {
+        height: 500px;
+    }
+
+    .slide-content h1 {
+        font-size: 2rem;
+    }
+
+    .slide-content p {
+        font-size: 1rem;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slider-btn.prev {
+        left: 15px;
+    }
+
+    .slider-btn.next {
+        right: 15px;
+    }
+
+    /* Sections */
+    section {
+        padding: 60px 0;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Sobre */
+    .sobre-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .sobre-text h3 {
+        font-size: 1.6rem;
+    }
+
+    .sobre-text p {
+        font-size: 1rem;
+    }
+
+    .sobre-features {
+        grid-template-columns: 1fr;
+    }
+
+    /* Diferenciais */
+    .diferenciais-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Galeria */
+    .galeria-filters {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-item img {
+        height: 250px;
+    }
+
+    /* Notícias */
+    .noticias-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CTA */
+    .cta-section {
+        padding: 60px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-content p {
+        font-size: 1.1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin: 0 auto 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .contact-info li {
+        justify-content: center;
+    }
+
+    /* Login */
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .login-info {
+        display: none;
+    }
+
+    .login-box {
+        padding: 40px 30px;
+    }
+
+    .login-logo {
+        max-width: 150px;
+    }
+
+    .login-header h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/* === SMALL MOBILE (max-width: 480px) === */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Logo */
+    .logo img {
+        height: 50px;
+    }
+
+    /* Hero Slider */
+    .hero-slider {
+        height: 400px;
+        margin-top: 80px;
+    }
+
+    .slide-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .slide-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    .slider-indicators {
+        bottom: 20px;
+    }
+
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .section-tag {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+
+    /* Sobre */
+    .sobre-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .sobre-badge {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .feature-item {
+        padding: 15px;
+    }
+
+    .feature-item i {
+        font-size: 1.5rem;
+    }
+
+    .feature-item h4 {
+        font-size: 1rem;
+    }
+
+    /* Diferenciais */
+    .diferencial-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .diferencial-icon i {
+        font-size: 2rem;
+    }
+
+    .diferencial-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .diferencial-card p {
+        font-size: 0.85rem;
+    }
+
+    /* Galeria */
+    .galeria-item img {
+        height: 200px;
+    }
+
+    .galeria-overlay i {
+        font-size: 2rem;
+    }
+
+    .galeria-overlay p {
+        font-size: 1rem;
+    }
+
+    /* Notícias */
+    .noticia-image {
+        height: 200px;
+    }
+
+    .noticia-content {
+        padding: 20px;
+    }
+
+    .noticia-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .noticia-content p {
+        font-size: 0.95rem;
+    }
+
+    /* CTA */
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0 0;
+    }
+
+    .footer-col h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
+        font-size: 0.85rem;
+    }
+
+    .developer-credit {
+        font-size: 0.85rem;
+    }
+
+    /* Scroll to Top */
+    .scroll-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Login */
+    .login-box {
+        padding: 30px 20px;
+    }
+
+    .login-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .login-header p {
+        font-size: 0.9rem;
+    }
+
+    .form-group input {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .btn-login-submit,
+    .btn-google {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+/* === LANDSCAPE MOBILE === */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-slider {
+        height: 400px;
+    }
+
+    .slide-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .slide-content p {
+        font-size: 0.95rem;
+    }
+
+    .login-container {
+        margin: 20px auto;
+    }
+
+    .login-box {
+        padding: 30px;
+    }
+}
+
+/* === ANIMATIONS === */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* === HIGH RESOLUTION DISPLAYS === */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Otimizações para telas Retina */
+    .logo img,
+    .footer-logo,
+    .login-logo {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* === PRINT STYLES === */
+@media print {
+    .navbar,
+    .hamburger,
+    .slider-btn,
+    .slider-indicators,
+    .scroll-top,
+    .cta-section,
+    .login-info {
+        display: none !important;
+    }
+
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,511 @@
+/* ============================================
+   COMPONENTES ADICIONAIS DOS DASHBOARDS
+   ============================================ */
+
+/* ============================================
+   ACTIVITY ITEMS
+   ============================================ */
+.activity-item {
+    padding: 15px;
+    background: var(--cinza-claro);
+    border-radius: 8px;
+    border-left: 4px solid var(--verde-brasil);
+    transition: var(--transition);
+}
+
+.activity-item:hover {
+    background: #e8e8e8;
+    transform: translateX(5px);
+}
+
+.activity-item.urgent {
+    border-left-color: var(--vermelho-erro);
+    background: #ffebee;
+}
+
+.activity-item.warning {
+    border-left-color: var(--amarelo-brasil);
+    background: #fffde7;
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--verde-brasil);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    font-size: 18px;
+}
+
+.activity-details {
+    flex: 1;
+}
+
+.activity-text {
+    color: var(--cinza-texto);
+    margin-bottom: 5px;
+}
+
+.activity-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.activity-info {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #666;
+}
+
+.activity-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ============================================
+   NOTIFICATION ITEMS
+   ============================================ */
+.notification-item {
+    padding: 15px;
+    background: var(--cinza-claro);
+    border-radius: 8px;
+    border-left: 4px solid var(--azul-brasil);
+    display: flex;
+    gap: 12px;
+    transition: var(--transition);
+}
+
+.notification-item:hover {
+    background: #e8e8e8;
+}
+
+.notification-item.unread {
+    background: #e3f2fd;
+    border-left-color: var(--verde-brasil);
+}
+
+.notification-icon {
+    width: 35px;
+    height: 35px;
+    background: var(--azul-brasil);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.notification-details {
+    flex: 1;
+}
+
+.notification-text {
+    color: var(--cinza-texto);
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.notification-time {
+    font-size: 12px;
+    color: #999;
+}
+
+/* ============================================
+   SCHEDULE ITEMS
+   ============================================ */
+.schedule-item {
+    padding: 12px;
+    background: var(--cinza-claro);
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: var(--transition);
+}
+
+.schedule-item:hover {
+    background: #e8e8e8;
+    transform: translateX(3px);
+}
+
+.schedule-time {
+    font-weight: 600;
+    color: var(--verde-brasil);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.schedule-details {
+    flex: 1;
+    font-size: 14px;
+    color: var(--cinza-texto);
+}
+
+.schedule-details strong {
+    color: var(--cinza-texto);
+}
+
+.schedule-details small {
+    color: #666;
+}
+
+/* ============================================
+   DEADLINE ITEMS
+   ============================================ */
+.deadline-item {
+    padding: 15px;
+    background: var(--cinza-claro);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    transition: var(--transition);
+}
+
+.deadline-item:hover {
+    background: #e8e8e8;
+    transform: scale(1.02);
+}
+
+.deadline-item.urgent {
+    background: #ffebee;
+    border-left: 4px solid var(--vermelho-erro);
+}
+
+.deadline-item.warning {
+    background: #fffde7;
+    border-left: 4px solid var(--amarelo-brasil);
+}
+
+.deadline-info {
+    flex: 1;
+}
+
+.deadline-info strong {
+    color: var(--cinza-texto);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.deadline-info small {
+    color: #666;
+    font-size: 13px;
+}
+
+.deadline-date {
+    text-align: right;
+    color: var(--azul-brasil);
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+}
+
+.deadline-date small {
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+
+/* ============================================
+   BADGES
+   ============================================ */
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge.urgent {
+    background: var(--vermelho-erro);
+    color: var(--branco);
+}
+
+.badge.warning {
+    background: var(--amarelo-brasil);
+    color: var(--cinza-texto);
+}
+
+.badge.success {
+    background: var(--verde-sucesso);
+    color: var(--branco);
+}
+
+.badge.info {
+    background: var(--azul-brasil);
+    color: var(--branco);
+}
+
+/* ============================================
+   DAY SCHEDULE (para alunos)
+   ============================================ */
+.day-schedule {
+    margin-bottom: 25px;
+}
+
+.day-schedule h4 {
+    color: var(--verde-brasil);
+    font-size: 16px;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--cinza-medio);
+}
+
+.day-schedule .schedule-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+    align-items: center;
+}
+
+.day-schedule .time {
+    color: var(--verde-brasil);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.day-schedule .subject {
+    color: var(--cinza-texto);
+    font-weight: 600;
+}
+
+.day-schedule .teacher {
+    color: #666;
+    font-size: 13px;
+}
+
+/* ============================================
+   NOTICE ITEMS
+   ============================================ */
+.notice-item {
+    padding: 18px;
+    background: var(--cinza-claro);
+    border-radius: 10px;
+    border-left: 4px solid var(--amarelo-brasil);
+    margin-bottom: 15px;
+    transition: var(--transition);
+}
+
+.notice-item:hover {
+    background: #e8e8e8;
+    box-shadow: var(--shadow-sm);
+}
+
+.notice-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--cinza-texto);
+}
+
+.notice-header i {
+    color: var(--amarelo-brasil);
+    font-size: 18px;
+}
+
+.notice-header strong {
+    flex: 1;
+    font-size: 15px;
+}
+
+.notice-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.notice-content {
+    color: var(--cinza-texto);
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* ============================================
+   DISCIPLINES GRID (para alunos)
+   ============================================ */
+.disciplines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.discipline-card {
+    background: var(--branco);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--verde-brasil);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.discipline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.discipline-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--verde-brasil), var(--azul-brasil));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.discipline-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cinza-texto);
+    margin-bottom: 8px;
+}
+
+.discipline-teacher {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.discipline-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #999;
+    padding-top: 12px;
+    border-top: 1px solid var(--cinza-medio);
+}
+
+/* ============================================
+   EMPTY STATES
+   ============================================ */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+.empty-state i {
+    font-size: 64px;
+    color: var(--cinza-medio);
+    margin-bottom: 20px;
+}
+
+.empty-state h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.empty-state p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ============================================
+   LOADING STATES
+   ============================================ */
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 4px;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.skeleton-text {
+    height: 16px;
+    margin-bottom: 8px;
+}
+
+.skeleton-title {
+    height: 24px;
+    width: 60%;
+    margin-bottom: 12px;
+}
+
+.skeleton-card {
+    height: 120px;
+    border-radius: 12px;
+}
+
+/* ============================================
+   RESPONSIVIDADE ADICIONAL
+   ============================================ */
+@media (max-width: 768px) {
+    .activity-info {
+        font-size: 12px;
+        gap: 10px;
+    }
+    
+    .deadline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .deadline-date {
+        align-items: flex-start;
+    }
+    
+    .day-schedule .schedule-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .disciplines-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .schedule-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .schedule-time {
+        font-size: 13px;
+    }
+    
+    .notice-header {
+        flex-wrap: wrap;
+    }
+}
